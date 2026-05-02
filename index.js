@@ -10,7 +10,7 @@ const client = new Client({
 });
 
 // Inicializando o sistema de eventos
-require('./handlers/eventHandler')(client);
+require('./eventHandler')(client);
 
 // Tratamento de erros
 process.on('unhandledRejection', (reason, promise) => {
