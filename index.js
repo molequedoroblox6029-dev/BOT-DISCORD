@@ -1,5 +1,4 @@
 const { Client, GatewayIntentBits } = require('discord.js');
-require('dotenv').config();
 
 const client = new Client({
     intents: [
@@ -27,5 +26,5 @@ process.on('uncaughtExceptionMonitor', (error, origin) => {
 });
 
 client.login(process.env.TOKEN).catch(err => {
-    console.error('[ERRO DE LOGIN] Verifique o TOKEN no Render!', err);
+    console.error('[ERRO DE LOGIN] Verifique o TOKEN no painel da hospedagem!', err);
 });
